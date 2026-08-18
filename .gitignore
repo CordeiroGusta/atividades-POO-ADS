@@ -1,0 +1,10 @@
+#Boas praticas - gitignore
+
+#ignorando o .git
+.git
+
+#pasta do vscode
+.vscode
+
+#variaveis de ambiente
+.env

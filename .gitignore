@@ -8,3 +8,6 @@
 
 #variaveis de ambiente
 .env
+
+#cache do python
+*/__pycache__

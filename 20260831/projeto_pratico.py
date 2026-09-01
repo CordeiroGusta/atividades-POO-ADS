@@ -15,7 +15,7 @@ class ContaBancaria:
 
     def sacar(self, valor):
         if self.saldo < valor:
-            return "Saldo invalido"
+            return "Saldo insuficiente"
 
         self.saldo = self.saldo - valor
         return self.saldo
@@ -25,7 +25,7 @@ class ContaBancaria:
 
     def efetuar_transacao(self, valor, chave_destinatario):
         if self.saldo < valor:
-            return "Saldo invalido"
+            return "Saldo insuficiente"
 
         self.saldo = self.saldo - valor
         return f'transferencia realizada de {valor} para a conta {chave_destinatario}\nSaldo atual: {self.mostrar_saldo()}'
